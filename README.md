@@ -17,25 +17,25 @@
 
 ## 使用方法
 
-修改 `make.py` 文件中的变量，默认请将音乐文件放在同级的`raw` 目录下
+* 修改 `make.py` 文件中的变量，默认请将音乐文件放在同级的`raw` 目录下
 
-描述会自动生成，内容包括：
+* 描述会自动生成，内容包括：
 
-> $packName - $package
->
-> %d songs in the pack
+  > $packName - $package
+  >
+  > %d songs in the pack
 
-如果希望音乐包有图标，请将 `pack.png` 放在同级目录下，程序会自动复制进包内，`pack.png` 的要求：
+* 如果希望音乐包有图标，请将 `pack.png` 放在同级目录下，程序会自动复制进包内，`pack.png` 的要求：
 
-> 如果未指定图标，则包旁边将显示圆石图标。任何图像都可以在此处使用，只要它名为`pack.png`。`pack.png`文件必须为64 x 64像素，才能正确渲染自定义图像。
->
-> 来自 [MinecraftWiki](https://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E5%88%B6%E4%BD%9C%E8%B5%84%E6%BA%90%E5%8C%85)
+  > 如果未指定图标，则包旁边将显示圆石图标。任何图像都可以在此处使用，只要它名为`pack.png`。`pack.png`文件必须为64 x 64像素，才能正确渲染自定义图像。
+  >
+  > 来自 [MinecraftWiki](https://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E5%88%B6%E4%BD%9C%E8%B5%84%E6%BA%90%E5%8C%85)
 
 
 
-运行 `make.py`
+* 运行 `make.py`
 
-处理好的资源包会放在 `$output_path` 下面
+* 处理好的资源包会放在 `$output_path` 下面
 
 
 

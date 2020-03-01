@@ -21,7 +21,7 @@
 
 描述会自动生成，内容包括：
 
-> 音乐包的名字 - 命名空间
+> $packName - $package
 >
 > %d songs in the pack
 

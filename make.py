@@ -6,11 +6,11 @@ from pydub import AudioSegment
                                        #| |
 packName='TestPack'                    #| |
                                        #| |
-path="raw"                             #| |
+path="raw/"+packName                   #| |
 convert_path='convert'                 #| |
 output_path='build/'+packName          #| |
                                        #| |
-package='net.mikoto.musicpack'         #| |
+package='minecraft'                    #| |
 pack_format=5                          #| |
 description='auto'                     #| |
                                        #| |
@@ -62,7 +62,7 @@ def convert(filename,directory):
 def ogg_handler(filename,directory):
 	global content,num
 	filename = filename[:-4]
-	content[filename]={'category':'record','sounds':[{'name':package+'/'+filename,'stream':True}]}
+	content[filename]={'category':'record','sounds':[{'name':filename,'stream':True}]}
 	new_path=os.path.join(os.getcwd(),output_path+'/assets/'+package+'/sounds')+'/'+filename+'.ogg'
 	num+=1
 	shutil.copyfile(os.path.join(directory,filename+'.ogg'),new_path)

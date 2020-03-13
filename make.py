@@ -42,11 +42,11 @@ def hub(filename,directory):
 def convert(filename,directory):
         try:
                 end=filename.split('.')[-1]
-                export_path=os.path.join(os.path.join(os.path.join(os.getcwd(),path),convert_path),filename.strip(end)+'ogg')
+                export_path=os.path.join(os.path.join(os.path.join(os.getcwd(),path),convert_path),filename[:-len(end)]+'ogg')
                 try:
                         os.close(os.open(export_path,0))
                 except:
-                        print('正在转换：'+filename.strip('.'+end)+'    ['+end+'->ogg]')
+                        print('正在转换：'+filename.replace('.'+end,'')+'    ['+end+'->ogg]')
                         s = AudioSegment.from_file(directory+'/'+filename,format=end)
                         
                         s.export(out_f=export_path, format="ogg")
@@ -55,7 +55,7 @@ def convert(filename,directory):
                 print(filename+' 转换失败：'+str(e))
                 return
         try:
-                ogg_handler(filename.strip(end)+'ogg',os.path.join(os.path.join(os.getcwd(),path),convert_path))
+                ogg_handler(filename[:-len(end)]+'ogg',os.path.join(os.path.join(os.getcwd(),path),convert_path))
         except BaseException as e:
                 print('载入出错：'+str(e))
                 

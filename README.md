@@ -1,6 +1,6 @@
 # Musicpack - Generator
 
-> Version 0.1.1
+> Version 0.1.2
 >
 > Minecraft 可以通过资源包的方式添加声音资源, 本项目会帮你完成打包的大部分工作。
 

@@ -4,10 +4,12 @@
 >
 > Minecraft 可以通过资源包的方式添加声音资源, 本项目会帮你完成打包的大部分工作。
 
->  **需要安装`pydub`库和`ffmpeg`才能进行音乐格式转换**
->
->  * 安装`pydub`    pip install pydub
->  * 安装`ffmpeg`  [pydub的README](https://github.com/jiaaro/pydub#getting-ffmpeg-set-up)
+
+
+## 依赖
+**需要安装`pydub`库和`ffmpeg`才能进行音乐格式转换**
+* `pip install pydub`
+* [安装ffmpeg的教程](https://github.com/jiaaro/pydub#getting-ffmpeg-set-up)
 
 ## 功能
 
